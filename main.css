@@ -1,0 +1,94 @@
+html{
+    font-size: 22px;
+}
+
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+hr{
+    color: rgb(242, 242, 242);
+}
+a{
+    color: aliceblue;
+}
+a:visited{
+    color: rgb(41, 73, 218);
+}
+a:hover{
+    color: aqua;
+}
+table,tr,td,th,caption{
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem;
+}
+.logo-container {
+    overflow: hidden; /* Hide anything that goes outside the container */
+    position: relative; /* Position relative to contain the absolute child */
+    height: 250px; /* Set a height for the container */
+}
+
+.html-logo {
+    position: absolute; /* Position the logo absolutely */
+    left: -100%; /* Start outside the left of the viewport */
+    animation: slideBackAndForth 2s ease-in-out infinite; /* Apply the slide animation */
+}
+
+@keyframes slideBackAndForth {
+    0% {
+        left: -100%; /* Start from the left outside the viewport */
+    }
+    50% {
+        left: 0; /* Move to its original position */
+    }
+    100% {
+        left: -100%; /* Move back to the left outside the viewport */
+    }
+}
+.head span{
+    display: inline-block;
+    animation: bounce 1.8s ease infinite;
+}
+.head span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.head span:nth-child(3){
+    animation-delay: 0.3s;
+}
+.head span:nth-child(4){
+    animation-delay: 0.5s;
+}
+.head span:nth-child(5){
+    animation-delay: 0.7s;
+}
+.head span:nth-child(6){
+    animation-delay: 0.9s;
+}
+.head span:nth-child(7){
+    animation-delay: 1.1s;
+}
+.head span:nth-child(8){
+    animation-delay: 1.3s;
+}
+.head span:nth-child(9){
+    animation-delay: 1.5s;
+}
+.head span:nth-child(10){
+    animation-delay: 1.7s;
+}
+@keyframes bounce {
+    0% 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
+.head{
+    display: flex;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 0px;
+}
